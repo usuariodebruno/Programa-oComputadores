@@ -1,0 +1,16 @@
+3. 
+A) Identifique o que faz a função.
+	Soma os algarismos do numeros passados por parametros 
+
+B) Determine se há valores em que a função nunca termina.
+	Valores negativos 
+
+def f_rec(x):
+    if x==0:
+        return 0
+    s = x%10
+    n = x//10
+    return s+f_rec(n)
+
+x = int(input())
+print(f_rec(x))
